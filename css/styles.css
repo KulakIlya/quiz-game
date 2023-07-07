@@ -1,0 +1,220 @@
+body {
+  background-color: #1d267d;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-title {
+  font-size: 60px;
+}
+@media screen and (min-width: 536px) {
+  .main-title {
+    font-size: 70px;
+  }
+}
+
+.container--title {
+  font-size: 18px;
+}
+@media screen and (min-width: 536px) {
+  .container--title {
+    font-size: 24px;
+  }
+}
+
+.question--text {
+  max-width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+}
+@media screen and (min-width: 536px) {
+  .question--text {
+    font-size: 30px;
+  }
+}
+
+.results--title {
+  font-size: 40px;
+}
+@media screen and (min-width: 536px) {
+  .results--title {
+    font-size: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .results--title {
+    font-size: 65px;
+  }
+}
+.results .container--title {
+  font-size: 24px;
+}
+
+.btn {
+  cursor: pointer;
+  border: 0;
+  background-color: transparent;
+}
+.btn--primary {
+  font-size: 24px;
+  width: 60%;
+  background-color: #1d267d;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 10px 15px;
+}
+.btn--start {
+  padding: 20px 30px;
+}
+.btn--answer {
+  text-align: left;
+  display: block;
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+}
+.btn--correct {
+  background-color: #90ee90;
+}
+.btn--wrong {
+  background-color: #f08080;
+}
+.btn--disabled {
+  background-color: #d3d3d3;
+}
+
+.main-content {
+  padding: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+}
+.main-content .btn--start {
+  margin-bottom: 30px;
+}
+.main-content .main-title {
+  margin-top: 20px;
+}
+.main-content .container {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #ffffff;
+  width: 100vw;
+  max-width: 800px;
+  min-height: 50vh;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 20px 25px;
+}
+@media screen and (min-width: 536px) {
+  .main-content .container {
+    width: 80vw;
+  }
+}
+.main-content .question {
+  position: relative;
+  display: block;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+.main-content .question--text {
+  display: inline-block;
+  margin-top: 20px;
+}
+.main-content .question .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main-content .question .btn--next {
+  margin: 7% auto 0;
+  display: block;
+  width: 60%;
+  font-size: 18px;
+}
+@media screen and (min-width: 1024px) {
+  .main-content .question .btn--next {
+    margin-right: 0;
+    width: 20%;
+  }
+}
+.main-content .question .answer-list {
+  width: 100%;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+@media screen and (min-width: 536px) {
+  .main-content .question .answer-list {
+    margin-top: 10px;
+  }
+}
+
+.main-content .btn-group {
+  margin-bottom: 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+.main-content .btn-group .btn {
+  width: 100%;
+}
+@media screen and (min-width: 536px) {
+  .main-content .btn-group {
+    width: 60%;
+  }
+}/*# sourceMappingURL=styles.css.map */

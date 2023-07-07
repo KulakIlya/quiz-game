@@ -1,0 +1,5 @@
+dist/
+/123.txt
+node_modules/
+.parcel-cache/
+/.DS_Store
