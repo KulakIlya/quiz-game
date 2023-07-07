@@ -2,16 +2,21 @@
   padding: 0 15px;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
 
   .btn--start {
-    margin-bottom: 30px;
+    width: 100%;
+    margin-bottom: 85px;
+    @media screen and (min-width: $mobile) {
+      width: 60%;
+    }
   }
 
   .main-title {
-    margin-top: 20px;
+    margin-top: 80px;
   }
 
   .container {
