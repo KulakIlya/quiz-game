@@ -7,8 +7,15 @@ const startHandler = () => {
   questionView.render(generateRandomQuestion(questionsCopy));
 };
 
+const nextQuestionHandler = () => {
+  const a = generateRandomQuestion(questionsCopy);
+
+  questionView.updateQuestion(a);
+};
+
 const init = () => {
   questionView.addStartHandler(startHandler);
+  questionView.addNextQuestionHandler(nextQuestionHandler);
 };
 
 init();

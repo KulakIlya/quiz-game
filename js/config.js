@@ -6,7 +6,12 @@ export const QUESTIONS = [
   },
   {
     question: 'Question #2',
-    answers: ['JS', 'Python', 'C++', 'C#'],
-    correctAnswer: 'JS',
+    answers: ['1', '2', '3', '4'],
+    correctAnswer: '3',
+  },
+  {
+    question: 'Question #3',
+    answers: ['1000', '2000', '3000', '4000'],
+    correctAnswer: '3',
   },
 ];

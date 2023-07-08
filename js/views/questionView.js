@@ -15,42 +15,43 @@ class QuestionView extends View {
       </div>
       <h2 class="question--text">${question}</h2>
       <ul class="answer-list">
-        <li class="answer-list--item">
-          <button type="button" class="btn btn--answer" value="answer-1">
-            Answer-1
-          </button>
-        </li>
-        <li class="answer-list--item">
-          <button type="button" class="btn btn--answer" value="answer-2">
-            Answer-2
-          </button>
-        </li>
-        <li class="answer-list--item">
-          <button type="button" class="btn btn--answer" value="answer-3">
-            Answer-3
-          </button>
-        </li>
-        <li class="answer-list--item">
-          <button type="button" class="btn btn--answer" value="answer-4">
-            Answer-4
-          </button>
-        </li>
+       ${answers.map((answer) => this.#generateAnswer(answer)).join('')}
       </ul>
   
       <button
         type="button"
-        class="btn btn--primary btn--next btn--disabled"
-        disabled
+        class="btn btn--primary btn--next "
+        
       >
         Next
       </button>
     </div>`;
   }
 
-  addStartHandler(handler) {
-    const btnStart = document.querySelector('.btn--start');
+  #generateAnswer(answer) {
+    return `<li class="answer-list--item">
+    <button type="button" class="btn btn--answer" value="${answer.toLowerCase()}">
+      ${answer}
+    </button>
+  </li>`;
+  }
 
-    btnStart.addEventListener('click', handler);
+  addStartHandler(handler) {
+    this._main.addEventListener('click', ({ target }) => {
+      const btnStart = target.closest('.btn--start');
+      if (!btnStart) return;
+
+      handler();
+    });
+  }
+
+  addNextQuestionHandler(handler) {
+    this._main.addEventListener('click', ({ target }) => {
+      const btnNext = target.closest('.btn--next');
+      if (!btnNext) return;
+
+      handler();
+    });
   }
 }
 
