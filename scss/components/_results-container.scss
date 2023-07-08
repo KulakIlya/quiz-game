@@ -1,19 +1,21 @@
 .main-content {
-  .btn-group {
-    margin-bottom: 20px;
+  .results {
+    .btn-group {
+      margin-bottom: 20px;
 
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-
-    .btn {
       width: 100%;
-    }
 
-    @media screen and (min-width: $mobile) {
-      width: 60%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      .btn {
+        width: 100%;
+      }
+
+      @media screen and (min-width: $mobile) {
+        width: 60%;
+      }
     }
   }
 }

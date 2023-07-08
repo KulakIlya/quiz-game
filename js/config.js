@@ -1,17 +1,17 @@
 export const QUESTIONS = [
   {
-    question: "What's the best programming language?",
+    questionText: "What's the best programming language?",
     answers: ['JS', 'Python', 'C++', 'C#'],
-    correctAnswer: 'JS',
+    correctAnswer: 'js',
   },
   {
-    question: 'Question #2',
+    questionText: 'Question #2',
     answers: ['1', '2', '3', '4'],
     correctAnswer: '3',
   },
   {
-    question: 'Question #3',
+    questionText: 'Question #3',
     answers: ['1000', '2000', '3000', '4000'],
-    correctAnswer: '3',
+    correctAnswer: '3000',
   },
 ];
