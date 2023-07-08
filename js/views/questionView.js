@@ -5,14 +5,14 @@ class QuestionView extends View {
   #btnNext;
   #correctAnswerText;
 
-  #answersArr;
+  _answersArr;
 
   render(question) {
     this._currentQuestion = question;
 
     this._main.innerHTML = this._generateQuestionMarkup(question);
 
-    this.#answersArr = [...this._main.querySelectorAll('.btn--answer')];
+    this._answersArr = [...this._main.querySelectorAll('.btn--answer')];
   }
 
   _generateQuestionMarkup(question) {
@@ -70,6 +70,8 @@ class QuestionView extends View {
 
       handler();
       this.#toggleBtnNext();
+
+      this._answersArr = [...this._main.querySelectorAll('.btn--answer')];
     });
   }
 
@@ -104,16 +106,15 @@ class QuestionView extends View {
     this.#btnNext.classList.toggle('btn--disabled');
     if (this.#btnNext.attributes.disabled) {
       this.#btnNext.removeAttribute('disabled');
-      console.log(this.#btnNext);
+
       return;
     }
 
     this.#btnNext.setAttribute('disabled', '');
-    console.log(this.#btnNext);
   }
 
   #disableAllAnswers() {
-    this.#answersArr.forEach((answer) => answer.setAttribute('disabled', ''));
+    this._answersArr.forEach((answer) => answer.setAttribute('disabled', ''));
   }
 }
 
