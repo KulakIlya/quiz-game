@@ -9,7 +9,7 @@ class ResultsView extends View {
   _generateMarkup(getNumberOfCorrectAnswers, numberOfQuestions) {
     return `<div class="container results">
       <h3 class="container--title">Quiz game</h3>
-      <h2 class="results--title">Your result is ${getNumberOfCorrectAnswers}/${numberOfQuestions}</h2>
+      <h2 class="results--title">Ваш результат: ${getNumberOfCorrectAnswers}/${numberOfQuestions}</h2>
       <div class="btn-group">
         <button type="button" class="btn btn--primary btn--restart">
           Почати спочатку
