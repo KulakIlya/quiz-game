@@ -1,6 +1,5 @@
 body {
   background-color: #1d267d;
-  overflow: hidden;
 }
 
 h1,
@@ -71,6 +70,7 @@ ul {
   background-color: transparent;
 }
 .btn--primary {
+  min-width: 250px;
   font-size: 24px;
   width: 60%;
   background-color: #1d267d;
@@ -88,6 +88,9 @@ ul {
   border: 1px solid black;
   border-radius: 5px;
   width: 100%;
+  -webkit-transition: all ease 1s;
+  -o-transition: all ease 1s;
+  transition: all ease 1s;
 }
 .btn--correct {
   background-color: #90ee90;
@@ -118,15 +121,11 @@ ul {
 }
 .main-content .btn--start {
   width: 100%;
-  margin-bottom: 85px;
 }
 @media screen and (min-width: 536px) {
   .main-content .btn--start {
     width: 60%;
   }
-}
-.main-content .main-title {
-  margin-top: 80px;
 }
 .main-content .container {
   text-align: center;
@@ -140,9 +139,8 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   background-color: #ffffff;
   width: 100vw;
   max-width: 800px;
@@ -156,6 +154,12 @@ ul {
     width: 80vw;
   }
 }
+@media screen and (min-width: 768px) {
+  .main-content .container {
+    width: 60vw;
+  }
+}
+
 .main-content .question {
   position: relative;
   display: block;
@@ -181,7 +185,7 @@ ul {
 .main-content .question .btn-group {
   width: 100%;
 }
-@media screen and (min-width: 536px) {
+@media screen and (min-width: 1024px) {
   .main-content .question .btn-group {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -202,9 +206,9 @@ ul {
   width: 100%;
   font-size: 18px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 536px) {
   .main-content .question .btn--next, .main-content .question .btn--menu {
-    width: 30%;
+    width: 80%;
   }
 }
 @media screen and (min-width: 1024px) {

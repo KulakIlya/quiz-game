@@ -34,7 +34,7 @@ class QuestionView extends View {
       <div class="wrapper">
         <h3 class="container--title">Quiz game</h3>
         <button type="button" class="btn btn--finish-now">
-          <u>Finish now</u>
+          <u>Закінчити</u>
         </button>
       </div>
       <h2 class="question--text">${questionText}</h2>
@@ -48,9 +48,9 @@ class QuestionView extends View {
           class="btn btn--primary btn--next btn--disabled"
           disabled
         >
-          Next
+          Наступне
         </button>
-        <button class="btn btn--primary btn--menu">Back to menu</button>
+        <button class="btn btn--primary btn--menu">Повернутися в меню</button>
       </div>
     </div>`;
   }

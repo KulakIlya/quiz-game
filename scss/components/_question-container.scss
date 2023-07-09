@@ -18,7 +18,7 @@
 
     .btn-group {
       width: 100%;
-      @media screen and (min-width: $mobile) {
+      @media screen and (min-width: $desktop) {
         display: flex;
         flex-direction: row-reverse;
         gap: 30px;
@@ -35,8 +35,8 @@
         width: 100%;
         font-size: 18px;
 
-        @media screen and (min-width: $tablet) {
-          width: 30%;
+        @media screen and (min-width: $mobile) {
+          width: 80%;
         }
         @media screen and (min-width: $desktop) {
           // margin-right: 0;

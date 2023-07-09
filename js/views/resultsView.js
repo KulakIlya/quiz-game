@@ -12,10 +12,10 @@ class ResultsView extends View {
       <h2 class="results--title">Your result is ${getNumberOfCorrectAnswers}/${numberOfQuestions}</h2>
       <div class="btn-group">
         <button type="button" class="btn btn--primary btn--restart">
-          Restart
+          Почати спочатку
         </button>
         <button type="button" class="btn btn--primary btn--menu">
-          Back to menu
+          Повернутися в меню
         </button>
       </div>
     </div>`;

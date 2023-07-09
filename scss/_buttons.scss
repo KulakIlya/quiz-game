@@ -4,6 +4,7 @@
   background-color: transparent;
 
   &--primary {
+    min-width: 250px;
     font-size: 24px;
     width: 60%;
     background-color: $primary-color;
@@ -24,6 +25,8 @@
     border: 1px solid black;
     border-radius: 5px;
     width: 100%;
+
+    transition: all ease 1s;
   }
 
   &--correct {

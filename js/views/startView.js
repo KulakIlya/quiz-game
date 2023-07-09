@@ -8,7 +8,7 @@ class StartView extends View {
   _generateMarkup() {
     return `<div class="container start-menu">
       <h1 class="main-title">Quiz Game</h1>
-      <button type="button" class="btn btn--primary btn--start">Start!</button>
+      <button type="button" class="btn btn--primary btn--start">Почати!</button>
     </div>`;
   }
 
