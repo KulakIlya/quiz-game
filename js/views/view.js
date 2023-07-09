@@ -27,4 +27,14 @@ export default class View {
         currentElement.innerHTML = elem.innerHTML;
     });
   }
+
+  addBackToMenuHandler(handler) {
+    this._main.addEventListener('click', ({ target }) => {
+      const backToMenuBtn = target.closest('.btn--menu');
+      if (!backToMenuBtn) return;
+      handler();
+
+      this._numberOfCorrectAnswers = 0;
+    });
+  }
 }

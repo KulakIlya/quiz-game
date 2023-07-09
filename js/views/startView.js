@@ -1,6 +1,6 @@
 import View from './view';
 class StartView extends View {
-  _restartBtn = document.querySelector('.btn--start');
+  #startBtn = document.querySelector('.btn--start');
 
   render() {
     this._main.innerHTML = this._generateMarkup();
@@ -13,6 +13,8 @@ class StartView extends View {
   }
 
   addEventHandler(handler) {
-    this._restartBtn.addEventListener('click', handler);
+    this.#startBtn.addEventListener('click', handler);
   }
 }
+
+export default new StartView();
